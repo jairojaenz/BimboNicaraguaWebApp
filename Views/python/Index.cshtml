@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Cuadro de Mando Integral";
+}
+<h2>Cuadro de Mando Integral</h2>
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @Html.Raw(ViewBag.Error)
+    </div>
+}
+else
+{
+    <div>
+        @Html.Raw(ViewBag.Message)
+    </div>
+}

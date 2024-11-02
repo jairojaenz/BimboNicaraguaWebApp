@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "EDA Report Temp";
+}
+
+<h2>Reporte EDA Y Correlacion</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @Html.Raw(ViewBag.Error)
+    </div>
+}
+else
+{
+    <div class="container-fluid">
+        @Html.Raw(ViewBag.Message)
+    </div>
+}
